@@ -2,50 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alura's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alura Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
-  <header>
+  <div class="sidebar" id="sidebar">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
     <nav>
-      <div class="logo">Alura</div>
-      <div class="menu-btn" onclick="toggleMenu()">☰</div>
-      <ul id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Projects</a>
+      <a href="#" class="nav-link">Contact</a>
     </nav>
-  </header>
+  </div>
 
-  <section id="hero">
-    <div class="profile">
-      <img src="assets/your-photo.jpg" alt="Alura" class="glow" />
-      <h1>Hi, I'm Alura</h1>
-      <p>Creative, community-minded, and driven to help.</p>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm Alura. 17, community-focused, and passionate about creating safe and supportive online spaces.</p>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <p>Former admin at <strong>Apollocpvp.org</strong>, helper at <strong>Packhub</strong>. Skilled in moderation and management.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Reach me at: <a href="mailto:your@email.com">your@email.com</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Alura</p>
-  </footer>
+  <div class="main-content">
+    <img src="your-photo.png" alt="Profile Picture" class="glow-img"/>
+    <h1>Hi, I'm Alura</h1>
+    <p>Welcome to my animated portfolio website!</p>
+  </div>
 
   <script src="script.js"></script>
 </body>
