@@ -1,30 +1,52 @@
-<!-- trigger rebuild -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alura's Site</title>
-   <link rel="stylesheet" href="style.css">
-    <script src="scripts.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alura's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <header>
     <nav>
-        <ul>
-            <li><a href="#" onclick="showTab('experience')">Experience</a></li>
-            <li><a href="#" onclick="showTab('about')">About Me</a></li>
-        </ul>
+      <div class="logo">Alura</div>
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <main>
-        <section id="experience" class="tab">
-            <h1>My Experience</h1>
-            <p>I am a former administrator at <strong>Apollocpvp.org</strong>, where I honed my skills in community management and server development. I currently serve as a helpful and dedicated helper at <strong>Packhub</strong>, always ready to assist users and improve their experience.</p>
-        </section>
-        <section id="about" class="tab hidden">
-            <h1>About Me</h1>
-            <p>Hi, I'm <strong>Alura</strong>. I'm 17 years old and passionate about supporting others and creating safe, welcoming spaces online. As a <strong>bisexual</strong> and proud <strong>female</strong>, I believe in the power of community and empathy. Helping people brings me joy, and I strive to be someone others can rely on in any situation.</p>
-        </section>
-    </main>
+  </header>
+
+  <section id="hero">
+    <div class="profile">
+      <img src="assets/your-photo.jpg" alt="Alura" class="glow" />
+      <h1>Hi, I'm Alura</h1>
+      <p>Creative, community-minded, and driven to help.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Alura. 17, community-focused, and passionate about creating safe and supportive online spaces.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>Former admin at <strong>Apollocpvp.org</strong>, helper at <strong>Packhub</strong>. Skilled in moderation and management.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Reach me at: <a href="mailto:your@email.com">your@email.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Alura</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
