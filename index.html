@@ -2,26 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alura Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alura's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="sidebar" id="sidebar">
-    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
-    <nav>
-      <a href="#" class="nav-link">Home</a>
-      <a href="#" class="nav-link">About</a>
-      <a href="#" class="nav-link">Projects</a>
-      <a href="#" class="nav-link">Contact</a>
-    </nav>
-  </div>
 
-  <div class="main-content">
-    <img src="your-photo.png" alt="Profile Picture" class="glow-img"/>
-    <h1>Hi, I'm Alura</h1>
+  <header>
+    <nav>
+      <div class="logo">Alura</div>
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="profile">
+      <img src="assets/profile.png" alt="Profile Picture" />
+    </div>
+    <h1>Hi, I'm Alura.</h1>
+    <p>Creative, community-minded, and driven to help.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
     <p>Welcome to my animated portfolio website!</p>
-  </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>Details about your background, projects, or skills.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email me at: your@email.com</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
 
   <script src="script.js"></script>
 </body>
